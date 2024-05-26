@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:E. South America Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0300
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0300
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Elisabete Souza:mailto:Bete.Souza@maxxidata.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Marcelo:ma
+ ilto:marcelo.lima.gomes.23@gmail.com
+DESCRIPTION;LANGUAGE=en-US:Olá\, Marcelo! Tudo bem?\n\n\nVocê chegou na e
+ tapa de entrevistas da vaga Desenvolvedor FullStack Sênior !\n\n\nNo conv
+ ite em anexo enviamos data e horário da nossa conversa via teams\, então
+  é só marcar na sua agenda e comparecer!\n\n\nTe esperamos! até lá!\n\
+ n\nMaxxi\n\n--------------------------------------------------------------
+ ---- Se você é candidato(a) e gostaria saber mais sobre esta vaga\, cliq
+ ue aqui<http://maxxioportunidades.gupy.io/jobs/7150667>.\nSe você é entr
+ evistador(a)\, não esqueça de registrar seus comentários clicando aqui<
+ http://maxxi.gupy.io/companies/jobs/7150667/candidates/438815468?tab=timel
+ ine>.\n___________________________________________________________________
+ _____________\nMicrosoft Teams Precisa de ajuda?<https://aka.ms/JoinTeamsM
+ eeting?omkt=pt-BR>\nJunte-se à reunião agora<https://teams.microsoft.com
+ /l/meetup-join/19%3ameeting_YWM1Mzk5Y2YtNWFhMS00NjJhLWIyMWItNzBiZTY3NDFiN2
+ U0%40thread.v2/0?context=%7b%22Tid%22%3a%22eb2d5e0a-1286-4661-8705-9196dcf
+ 47486%22%2c%22Oid%22%3a%22ef04f12d-550e-4685-9a61-19fd826ab567%22%7d>\nID 
+ da Reunião: 255 526 327 897\nSenha: dUp6HC\n_____________________________
+ ___\nPara organizadores: Opções de reunião<https://teams.microsoft.com/
+ meetingOptions/?organizerId=ef04f12d-550e-4685-9a61-19fd826ab567&tenantId=
+ eb2d5e0a-1286-4661-8705-9196dcf47486&threadId=19_meeting_YWM1Mzk5Y2YtNWFhM
+ S00NjJhLWIyMWItNzBiZTY3NDFiN2U0@thread.v2&messageId=0&language=pt-BR>\n[ht
+ tps://i.postimg.cc/Gpx8smhc/Maxxi-Varia-o-Logo-Padr-o-Horizontal-Estilo-S-
+ lido-Aplica-o-Fundos-Claros.png]\n________________________________________
+ ________________________________________\n
+UID:040000008200E00074C5B7101A82E00800000000506FB925BAAADA01000000000000000
+ 0100000007F361D699C1FBC42A82407827CB48C28
+SUMMARY;LANGUAGE=en-US:Conversa RH -  Marcelo Lima - Desenvolvedor Full Sta
+ ck
+DTSTART;TZID=E. South America Standard Time:20240521T100000
+DTEND;TZID=E. South America Standard Time:20240521T104500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20240520T133225Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=en-US:
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:2122687568
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_YWM1Mzk5Y2YtNWFhMS00NjJhLWIyMWItNzBiZTY3NDFiN2U0%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%22eb2d5e0a-1286-4661-8705-9196dcf47486%22%2c%22O
+ id%22%3a%22ef04f12d-550e-4685-9a61-19fd826ab567%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/eb2d5e0a-1286-4661-8705-9196dcf47486/ef04f12d-550e-4685-9a61-1
+ 9fd826ab567/19_meeting_YWM1Mzk5Y2YtNWFhMS00NjJhLWIyMWItNzBiZTY3NDFiN2U0@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_YWM1Mzk5Y2YtNWFhMS00NjJ
+ hLWIyMWItNzBiZTY3NDFiN2U0@thread.v2"\,"rid":0\,"mid":0\,"uid":null\,"priva
+ te":true\,"type":0}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-REQUESTEDATTENDANCEMODE:DEFAULT
+X-MICROSOFT-ISRESPONSEREQUESTED:TRUE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

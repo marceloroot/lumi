@@ -1,0 +1,53 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 9s
+      timeout: 9s
+      retries: 5
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: db_lumi
+    volumes:
+      - ./init-postgres.sql:/docker-entrypoint-initdb.d/init-postgres.sql:ro
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    ports:
+      - 8081:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: example
+
+  frontend:
+    build: 
+      context: ./FrontEnd
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./FrontEnd:/app
+      - /app/node_modules
+
+  backend:
+    build:
+      context: ./BackEnd
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: always
+    volumes:
+      - ./BackEnd:/app
+      - /app/node_modules
+    environment:
+      DATABASE_URL: postgresql://root:example@postgres:5432/db_lumi?schema=public
