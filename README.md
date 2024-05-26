@@ -25,7 +25,7 @@ Siga as etapas abaixo para configurar e executar o projeto localmente.
 Primeiro, clone o repositório para a sua máquina local usando o comando abaixo:
 
 ```bash
-git clone https://github.com/marceloroot/RBRDigital.git
+git clone https://github.com/marceloroot/lumi.git
 ```
 ### 2. Acesse o Diretório do Projeto
 
