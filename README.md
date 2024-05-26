@@ -78,4 +78,8 @@ Para rodar os tests tem que endividualmente em cada diretorio e executar:
 npm install
 ```
 
+```bash
+npm run test
+```
+
 
