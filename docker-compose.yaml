@@ -3,7 +3,7 @@ services:
   postgres:
     image: postgres
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "pg_isready -U root"]
       interval: 9s
       timeout: 9s
       retries: 5
@@ -27,7 +27,7 @@ services:
       PGADMIN_DEFAULT_PASSWORD: example
 
   frontend:
-    build: 
+    build:
       context: ./FrontEnd
       dockerfile: Dockerfile
     ports:
